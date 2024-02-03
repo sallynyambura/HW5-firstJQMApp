@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -21,7 +24,7 @@
 
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>hobbies - home</h2>
+            <h2 class="hobbiesnavbar">Hobbies - Home</h2>
         
             <div data-role="navbar">
                 <ul>
@@ -33,9 +36,15 @@
 
         <!-- content -->
         <div data-role="content" data-theme='a'>
-            <h2> Hobbies</h2>
-            <img src="./images/blossoms.png" alt="picture of a caclculator">
-            <img src="./images/tea.png" alt="picture of a caclculator">
+            <h2 class="hobbies"> Hobbies</h2>
+            <div class="images">
+                <div class="imgcontainer">
+                    <img src="./images/blossoms.png" alt="cherry blossom plant">
+                </div>
+                <div class="imgcontainer">
+                    <img src="./images/tea.png" alt="Tea pot with tea leaves on the side">
+                </div>
+            </div>
 
         </div>
 
