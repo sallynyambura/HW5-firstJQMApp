@@ -4,12 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First JQM App</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
-</head>
-<body>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     
+
+    <title>First JQM App</title>
+</head>
+<body>
+    
+    <!-- home page -->
+    <div data-role="page" id="home" data-theme='a'>
+        
+
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>hobbies - home</h2>
+        
+            <div data-role="navbar">
+                <ul>
+                <li><a href="#tea" data-transition="flip">Tea Page</a></li>
+                <li><a href="#plant" data-transition="flip">Plants Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>  
+
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2> Hobbies</h2>
+            <img src="./images/blossoms.png" alt="picture of a caclculator">
+            <img src="./images/tea.png" alt="picture of a caclculator">
+
+        </div>
+
+          <!-- notes footer --> 
+          <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Qiwen and Sally</h3>
+        </div>
+    </div>
+  
+
+
+   <!-- tea page -->
+    <div data-role="page" id="tea" data-theme='a'>
+        
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Tea Page</h2>
+
+            <div data-role="navbar" >
+                <ul>
+                 <li><a href="#home"data-transition="slideup">Home Page</a></li>
+                 <li><a href="#plant" data-transition="slideup">Plant Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+
+        </div>
+
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2> Add Your Tea</h2>
+                Tea Name <br />
+                <input type="text" id="teaName" value="" /><br />
+                Tea Type <br />
+                <input type="text" value="" id="teaType" /><br />
+                <button id="addTea" type="button" >ADD</button>  <br />
+
+                <!--display-->
+                <div >
+                    <ul id="teaDisplay">                       
+                    </ul>
+                </div>
+        </div>
+
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Qiwen and Sally</h3>
+        </div>
+    </div>
+     
+
+
+    
+      <!-- plant page -->
+    <div data-role="page" id="plant" data-theme='a'>
+        
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Add Your Plant</h2>
+       
+
+            <div data-role="navbar" >
+                <ul>
+                <li><a href="#home" data-transition="slidedown">Home Page</a></li>
+                <li><a href="#tea"data-transition="slidedown">Tea Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2> Add Your Plant</h2>
+
+            Plant Name <br />
+            <input type="text" id="plantName" value="" /><br />
+            Plant Color <br />
+            <input type="text" value="" id="plantColor" /><br />
+            <button id="addPlant" type="button" >add</button>  <br />
+            <!--display-->
+            <div >
+                <ul id="plantDisplay">                       
+                </ul>
+            </div>
+        </div>
+
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Qiwen and Sally</h3>
+        </div>
+    </div>
+     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
