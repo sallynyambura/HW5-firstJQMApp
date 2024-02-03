@@ -1,4 +1,8 @@
 /* General styling */
+
+html {
+    font-size: 16px;
+}
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #f1d5cb;
@@ -11,14 +15,12 @@ body {
     background-color: #92a689;
     color: rgb(23, 23, 23);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Navbar styling */
 [data-role="navbar"] {
-    background-color: #92a689; /* Dark green */
     border: none;
-    
 }
 
 
@@ -26,6 +28,7 @@ body {
 [data-role="content"] {
     background-color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
 /* Footer styling */
@@ -33,14 +36,13 @@ body {
     background-color: #92a689; /* Dark green */
     color: rgb(27, 26, 26);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 /* Button styling */
 button {
-    background-color: #4CAF50; /* Dark green */
     color: #fff;
-    border: none;
+    border: 1px solid black;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -50,7 +52,6 @@ button {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -65,7 +66,8 @@ input[type="text"] {
 #teaDisplay,
 #plantDisplay {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 #teaDisplay li,
@@ -80,18 +82,18 @@ input[type="text"] {
 /* Image styling */
 .images {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 .imgcontainer {
     width: 50%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
-    padding: 15px 15px;
 }
 .imgcontainer img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: inline-block;
+    margin: 0 auto;
     border-radius: 7px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
