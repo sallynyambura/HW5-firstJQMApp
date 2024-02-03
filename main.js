@@ -48,7 +48,7 @@ function createTeaList() {
     teaArray.forEach(function (element,) {   // use handy array forEach method
         var li = document.createElement('li');
           // added data-role="listview" to the ul in the html
-        li.innerHTML = "Name: " + element.name + "Type: " + element.type;
+        li.innerHTML = "Name: " + element.name + " Type: " + element.type;
         teaUl.appendChild(li);
     });
 };
@@ -61,7 +61,7 @@ function createPlantList() {
     plantArray.forEach(function (element,) {   // use handy array forEach method
         var li = document.createElement('li');
           // added data-role="listview" to the ul in the html
-        li.innerHTML = "Name: "+element.name + "Color: " + element.color;
+        li.innerHTML = "Name: "+element.name + "  Color: " + element.color;
         plantUl.appendChild(li);
     });
 };
