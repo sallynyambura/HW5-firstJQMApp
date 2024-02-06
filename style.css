@@ -82,11 +82,11 @@ input[type="text"] {
 /* Image styling */
 .images {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 .imgcontainer {
-    width: 50%;
-    height: 400px;
+    width: 75%;
+    height: 500px;
     overflow: hidden;
 }
 .imgcontainer img {

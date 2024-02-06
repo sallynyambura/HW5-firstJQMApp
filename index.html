@@ -24,23 +24,21 @@
 
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>Hobbies - Home</h2>
+            <h2>PLANT HUB</h2>
         
             <div data-role="navbar">
                 <ul>
-                <li><a href="#tea" data-transition="flip">Tea Page</a></li>
-                <li><a href="#plant" data-transition="flip">Plants Page</a></li>
+                <li><a href="#tea" data-transition="flip">Your Plant Information</a></li>
+                <li><a href="#plant" data-transition="flip">Add New Plant</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div>  
 
         <!-- content -->
         <div data-role="content" data-theme='a'>
-            <h2 class="hobbies"> Hobbies</h2>
+            <h2 class="hobbies"> Discover Your Plants </h2>
             <div class="images">
-                <div class="imgcontainer">
-                    <img src="./images/tea.png" alt="Tea pot with tea leaves on the side">
-                </div>
+                
                 <div class="imgcontainer">
                     <img src="./images/blossoms.png" alt="cherry blossom plant">
                 </div>
@@ -57,12 +55,12 @@
   
 
 
-   <!-- tea page -->
+   <!-- Plant information Page -->
     <div data-role="page" id="tea" data-theme='a'>
         
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>Tea Page</h2>
+            <h2>Ensuring Your Plants Thrive: Care Tips</h2>
 
             <div data-role="navbar" >
                 <ul>
@@ -75,18 +73,11 @@
 
         <!-- content -->
         <div data-role="content" data-theme='a'>
-            <h2> Add Your Tea</h2>
-                Tea Name <br />
-                <input type="text" id="teaName" value="" /><br />
-                Tea Type <br />
-                <input type="text" value="" id="teaType" /><br />
-                <button id="addTea" type="button" >ADD</button>  <br />
-
-                <!--display-->
-                <div >
-                    <ul id="teaDisplay">                       
-                    </ul>
-                </div>
+            
+            <!--display-->
+            
+            <ul id="myul" data-role="listview"> </ul>
+            
         </div>
 
         <!-- notes footer --> 
@@ -103,31 +94,36 @@
         
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>Add Your Plant</h2>
+            <h2>Plant Page</h2>
        
 
             <div data-role="navbar" >
                 <ul>
                 <li><a href="#home" data-transition="slidedown">Home Page</a></li>
-                <li><a href="#tea"data-transition="slidedown">Tea Page</a></li>
+                <li><a href="#tea"data-transition="slidedown">Your Plant Information</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div>
 
         <!-- content -->
         <div data-role="content" data-theme='a'>
-            <h2> Add Your Plant</h2>
+            <h2> Add Your New Plant</h2>
 
-            Plant Name <br />
-            <input type="text" id="plantName" value="" /><br />
-            Plant Color <br />
-            <input type="text" value="" id="plantColor" /><br />
-            <button id="addPlant" type="button" >add</button>  <br />
-            <!--display-->
-            <div >
-                <ul id="plantDisplay">                       
-                </ul>
-            </div>
+            Light Requirement (High, Medium, Low) <br />
+            <input type="text" id="lightRequirement" value="" /><br />
+            
+            Name of Plant <br />
+            <input type="text" value="" id="plantName" /><br />
+
+            <!--Dropdown menu for plants-->
+            <label for="select-type">Select Water Requirement: </label>
+            <select name="select-type" id="select-type">
+                <option value="onceAWeek">Once or Twice a Week</option>
+                <option value="Daily">Daily</option>
+                <option value="onceAMonth">Once or Twice a Month</option>
+            </select> <br/>
+            <button id="addPlant" type="button" >Add Plant Information</button>  <br />
+    
         </div>
 
         <!-- notes footer --> 
