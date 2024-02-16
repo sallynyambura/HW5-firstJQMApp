@@ -57,11 +57,29 @@ function createPlantList() {
     var myul = document.getElementById("myul");
     myul.innerHTML = "";
 
-    plantArray.forEach(function (element,) {   // use handy array forEach method
-        var li = document.createElement('li');
-          // added data-role="listview" to the ul in the html
-        li.innerHTML = " <strong>Plant Name:</strong>  "+element.name + "  <strong> | Light Requirement:</strong> " + element.light + " <strong>| Water Requirement:</strong> " + waterOptions[element.water];
+    plantArray.forEach(function (element) {   // use handy array forEach method
+        var li = document.createElement('li');     
+        var a = document.createElement('a');
+        
+        a.innerHTML = " <strong>Plant Name:</strong>  "+element.name;
+        a.href = "#detailPage";
+
+        li.appendChild(a);
         myul.appendChild(li);
+        navigateToDetailPage(element);
     });
 };
+
+function navigateToDetailPage(plant) {
+    // Get the element of the detail information page
+    var detailPage = document.getElementById("detailPage");
+
+    // Set the content of the detail information page
+    detailPage.querySelector(".plant-name").innerText = "Plant Name: " + plant.name;
+    detailPage.querySelector(".light-requirement").innerText = "Light Requirement: " + plant.light;
+    detailPage.querySelector(".water-requirement").innerText = "Water Requirement: " + waterOptions[plant.water];
+
+}
+
+
 
