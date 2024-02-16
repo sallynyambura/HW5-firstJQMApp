@@ -66,9 +66,13 @@ function createPlantList() {
         a.innerHTML = " <strong>Plant Name:</strong>  "+element.name;
         a.href = "#detailPage";
 
+        a.addEventListener("click",function (){
+            navigateToDetailPage(element);
+        })
         li.appendChild(a);
         myul.appendChild(li);
-        navigateToDetailPage(element);
+   
+        
     });
 };
 
