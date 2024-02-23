@@ -1,6 +1,7 @@
 let plantArray = [];
 
 let PlantObject = function (pName, plightRequirement, phumidityLevel, pwaterRequirement) {
+    this.ID = Math.random().toString(16).slice(5);
     this.name = pName;
     this.light = plightRequirement;
     this.humidity = phumidityLevel;
